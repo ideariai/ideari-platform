@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to Ideari.ai</title>
   <link rel="stylesheet" href="style.css" />
+
+  <script>
+    const password = "njhvwvds7_000ut1";
+    const entered = prompt("🔐 This site is under development.\nPlease enter the password:");
+    if (entered !== password) {
+      document.body.innerHTML = "<h2 style='text-align:center; margin-top:20%;'>Access denied</h2>";
+      throw new Error("Wrong password");
+    }
+  </script>
 </head>
 <body>
   <header>
